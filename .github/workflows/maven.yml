@@ -16,4 +16,7 @@ jobs:
 
     steps:
       - name: Run curl
-        run: curl -k -u ${{ secrets.JENKINS_USER }}:${{ secrets.JENKINS_TOKEN }} https://jenkins.sohlberg.io/job/demo-pipeline/build?token=${{ secrets.JENKINS_TOKEN }} 
+        env:
+          JENKINS_USER: ${{ secrets.JENKINS_USER }}
+          JENKINS_TOKEN: ${{ secrets.JENKINS_TOKEN }}
+        run: curl -k -u "$JENKINS_USER":"$JENKINS_TOKEN" https://jenkins.sohlberg.io/job/demo-pipeline/build?token="$JENKINS_TOKEN" 
