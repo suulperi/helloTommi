@@ -15,5 +15,5 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Run curl 
-        run: curl -k https://jenkins.sohlberg.io/job/demo-pipeline/build?token=11f83e3e22da79e1276e8747cfb9711ac1
+      - name: Run curl
+        run: curl -k -u build:11f83e3e22da79e1276e8747cfb9711ac1 https://jenkins.sohlberg.io/job/demo-pipeline/build?token=11f83e3e22da79e1276e8747cfb9711ac1 
