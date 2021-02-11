@@ -28,4 +28,4 @@ jobs:
         # Request URL
         url: https://jenkins.sohlberg.io/me/my-views/view/all/job/demo-pipeline/build?token=11f83e3e22da79e1276e8747cfb9711ac1
         # Request Method
-        method: POST
+        method: GET
