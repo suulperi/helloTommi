@@ -6,8 +6,6 @@ name: Call Jenkins to build war
 on:
   push:
     branches: [ master ]
-  pull_request:
-    branches: [ master ]
 
 jobs:
   build:
